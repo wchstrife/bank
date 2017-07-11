@@ -49,7 +49,6 @@ public class CustomerDao {
 	public Customer findByName(String name) throws Exception{
 		Connection conn = initConnection();
 		String sql = "SELECT * FROM customer where name = " + "'"+ name + "'";
-		System.out.println(sql);
 		Statement stmt = conn.createStatement();
 		ResultSet rs = stmt.executeQuery(sql);
 		rs.next();

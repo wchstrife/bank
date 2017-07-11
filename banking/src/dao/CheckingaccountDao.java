@@ -2,10 +2,7 @@ package dao;
 
 import bean.Checkingaccount;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.Statement;
+import java.sql.*;
 import java.util.ArrayList;
 
 /**
@@ -40,5 +37,68 @@ public class CheckingaccountDao {
 		conn.close();
 
 		return list;
+	}
+
+	public String withDraw(int id, double amt) throws Exception{
+
+		Connection conn = initConnection();
+		Statement stmt = conn.createStatement();
+		String sql = "SELECT * FROM checkingaccount where id = " + id;
+		ResultSet rs = stmt.executeQuery(sql);
+		rs.next();
+		double balance = rs.getDouble("balance");
+		double protect = rs.getDouble("protect");
+
+		Connection connection = initConnection();
+		PreparedStatement ps = connection.prepareStatement("UPDATE checkingaccount SET balance = ?, protect = ? WHERE id = ?");
+
+		if(balance > amt){
+			balance -= amt;
+			ps.setDouble(1, balance);
+			ps.setDouble(2, protect);
+			ps.setDouble(3, id);
+			ps.executeUpdate();
+		}else if(protect > (amt - balance)){
+			protect -= (amt - balance);
+			balance = 0;
+			ps.setDouble(1, balance);
+			ps.setDouble(2, protect);
+			ps.setDouble(3, id);
+			ps.executeUpdate();
+		}else {
+
+			stmt.close();
+			ps.close();
+			conn.close();
+			return "取款失败";
+		}
+
+		stmt.close();
+		ps.close();
+		conn.close();
+		return "取款成功";
+	}
+
+	public String save(int id, double amt) throws Exception{
+
+		Connection conn = initConnection();
+		Statement stmt = conn.createStatement();
+		String sql = "SELECT * FROM checkingaccount where id = " + id;
+		ResultSet rs = stmt.executeQuery(sql);
+		rs.next();
+
+		double balance = rs.getDouble("balance");
+
+		Connection connection = initConnection();
+		PreparedStatement ps = connection.prepareStatement("UPDATE checkingaccount SET balance = ? WHERE id = ?");
+		ps.setDouble(1, balance + amt);
+		ps.setInt(2, id);
+		ps.executeUpdate();
+
+		stmt.close();
+		ps.close();
+		conn.close();
+
+		return "取款成功";
 	}
 }
