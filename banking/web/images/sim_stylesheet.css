@@ -1,0 +1,102 @@
+A.bodywhite:link {
+	COLOR: #b4c0d4
+}
+A.bodywhite:visited {
+	COLOR: #b4c0d4
+}
+A.bodywhite:hover {
+	COLOR: #ff9900; TEXT-DECORATION: underline
+}
+A.bodyblue:link {
+	COLOR: #ff9900
+}
+A.bodyblue:visited {
+	COLOR: #ff9900
+}
+A.bodyblue:hover {
+	COLOR: #848484; TEXT-DECORATION: underline
+}
+A.bodydarkblue:link {
+	COLOR: #ff9900
+}
+A.bodydarkblue:visited {
+	COLOR: #ff9900
+}
+A.bodydarkblue:hover {
+	COLOR: #9d9d9d; TEXT-DECORATION: underline
+}
+A.bodyldarkblue:link {
+	COLOR: #ff9900
+}
+A.bodyldarkblue:visited {
+	COLOR: #ff9900
+}
+A.bodyldarkblue:hover {
+	COLOR: #9d9d9d; TEXT-DECORATION: underline
+}
+A.topnav:link {
+	COLOR: #2f4f88
+}
+A.topnav:visited {
+	COLOR: #2f4f88
+}
+A.topnav:hover {
+	FONT-WEIGHT: bolder; COLOR: #ff9900
+}
+.bodyblue {
+	FONT-SIZE: 11px; COLOR: #2f4f92; LINE-HEIGHT: 13px; FONT-FAMILY: Verdana; TEXT-DECORATION: none
+}
+.bodyblack {
+	FONT-SIZE: 11px; COLOR: black; LINE-HEIGHT: 13px; FONT-FAMILY: Verdana; TEXT-DECORATION: none
+}
+.bodyred {
+	FONT-SIZE: 11px; COLOR: #990000; LINE-HEIGHT: 13px; FONT-FAMILY: Verdana; TEXT-DECORATION: none
+}
+.bodywhite {
+	FONT-SIZE: 11px; COLOR: white; LINE-HEIGHT: 13px; FONT-FAMILY: Verdana; TEXT-DECORATION: none
+}
+.bodywhitel {
+	FONT-SIZE: 13px; COLOR: white; LINE-HEIGHT: 13px; FONT-FAMILY: Verdana; TEXT-DECORATION: none
+}
+.bodydarkblue {
+	FONT-SIZE: 11px; COLOR: #20355a; LINE-HEIGHT: 13px; FONT-FAMILY: Verdana; TEXT-DECORATION: none
+}
+.bodyldarkblue {
+	FONT-SIZE: 13px; COLOR: #20355a; LINE-HEIGHT: 13px; FONT-FAMILY: Verdana; TEXT-DECORATION: none
+}
+.topnav {
+	FONT-SIZE: 11px; COLOR: #2f4f88; LINE-HEIGHT: 12px; FONT-FAMILY: Verdana; TEXT-DECORATION: none
+}
+.bodyorange {
+	FONT-SIZE: 13px; COLOR: #ff9900; LINE-HEIGHT: 16px; FONT-FAMILY: Verdana; TEXT-DECORATION: none
+}
+.bodyorangesm {
+	FONT-SIZE: 11px; COLOR: #ff9900; LINE-HEIGHT: 12px; FONT-FAMILY: Verdana; TEXT-DECORATION: none
+}
+.footer {
+	FONT-SIZE: 10px; COLOR: #666666; LINE-HEIGHT: 16px; FONT-FAMILY: Verdana; TEXT-DECORATION: none
+}
+.bodylarge {
+	FONT-SIZE: 16px; COLOR: black; LINE-HEIGHT: 16px; FONT-FAMILY: Verdana; TEXT-DECORATION: none
+}
+#about_sim_drop1 {
+	BORDER-RIGHT: #2f4f88 1px solid; BORDER-TOP: #2f4f88 1px solid; Z-INDEX: 1; LEFT: 0px; VISIBILITY: hidden; BORDER-LEFT: #2f4f88 1px solid; WIDTH: 140px; BORDER-BOTTOM: #2f4f88 1px solid; POSITION: absolute; TOP: 0px
+}
+#about_sim_corporate_drop2 {
+	BORDER-RIGHT: #2f4f88 1px solid; BORDER-TOP: #2f4f88 1px solid; Z-INDEX: 1; LEFT: 0px; VISIBILITY: hidden; BORDER-LEFT: #2f4f88 1px solid; WIDTH: 140px; BORDER-BOTTOM: #2f4f88 1px solid; POSITION: absolute; TOP: 0px
+}
+#about_sim_portfolio_drop2 {
+	BORDER-RIGHT: #2f4f88 1px solid; BORDER-TOP: #2f4f88 1px solid; Z-INDEX: 1; LEFT: 0px; VISIBILITY: hidden; BORDER-LEFT: #2f4f88 1px solid; WIDTH: 180px; BORDER-BOTTOM: #2f4f88 1px solid; POSITION: absolute; TOP: 0px
+}
+#client_access_drop1 {
+	BORDER-RIGHT: #2f4f88 1px solid; BORDER-TOP: #2f4f88 1px solid; Z-INDEX: 1; LEFT: 0px; VISIBILITY: hidden; BORDER-LEFT: #2f4f88 1px solid; WIDTH: 140px; BORDER-BOTTOM: #2f4f88 1px solid; POSITION: absolute; TOP: 0px
+}
+#client_access_customer_drop2 {
+	BORDER-RIGHT: #2f4f88 1px solid; BORDER-TOP: #2f4f88 1px solid; Z-INDEX: 1; LEFT: 0px; VISIBILITY: hidden; BORDER-LEFT: #2f4f88 1px solid; WIDTH: 150px; BORDER-BOTTOM: #2f4f88 1px solid; POSITION: absolute; TOP: 0px
+}
+#join_our_team_drop1 {
+	BORDER-RIGHT: #2f4f88 1px solid; BORDER-TOP: #2f4f88 1px solid; Z-INDEX: 1; LEFT: 0px; VISIBILITY: hidden; BORDER-LEFT: #2f4f88 1px solid; WIDTH: 150px; BORDER-BOTTOM: #2f4f88 1px solid; POSITION: absolute; TOP: 0px
+}
+.buttonsmall {
+	FONT-SIZE: 11px; COLOR: black; LINE-HEIGHT: 11px; FONT-FAMILY: Verdana; TEXT-DECORATION: none
+}
