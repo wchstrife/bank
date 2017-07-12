@@ -1,6 +1,6 @@
 CREATE database banking;
 
-use bbs;
+use banking;
 
 CREATE TABLE customer(
 id INT PRIMARY KEY auto_increment,
